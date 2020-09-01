@@ -79,6 +79,18 @@ def download_all(phpsessid):
              'download=1&filepath=Poses/D3_Positions_mono_universal&filename=SubjectSpecific_{}.tgz'.format(id)),
             ('Videos_{}.tgz'.format(subject_id),
              'download=1&filepath=Videos&filename=SubjectSpecific_{}.tgz'.format(id)),
+            ('BBoxes_MAT_{}.tgz'.format(subject_id),
+             'download=1&filepath=Segments/mat_gt_bb&filename=SubjectSpecific_{}.tgz'.format(id)),
+            ('BackSub_MAT_{}.tgz'.format(subject_id),
+             'download=1&filepath=Segments/mat_gt_bs&filename=SubjectSpecific_{}.tgz'.format(id)),
+            ('PartLabels_MAT_{}.tgz'.format(subject_id),
+             'download=1&filepath=Segments/mat_gt_pl&filename=SubjectSpecific_{}.tgz'.format(id)),
+            ('RawDepth_MAT_{}.tgz'.format(subject_id),
+             'download=1&filepath=Segments/mat_gt_rd&filename=SubjectSpecific_{}.tgz'.format(id)),
+            ('SCDepth_MAT_{}.tgz'.format(subject_id),
+             'download=1&filepath=Segments/mat_gt_scd&filename=SubjectSpecific_{}.tgz'.format(id)),
+            ('BackSub_MPEG4_{}.tgz'.format(subject_id),
+             'download=1&filepath=Segments/gt_bs&filename=SubjectSpecific_{}.tgz'.format(id))
         ]
 
     out_dir = 'archives'
