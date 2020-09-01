@@ -43,7 +43,19 @@ def extract_all():
       extract_tgz('archives/Poses_D3_Positions_mono_universal_{}.tgz'.format(subject_id),
                   path.join(out_dir, 'Poses_D3_Positions_mono_universal')),
       extract_tgz('archives/Videos_{}.tgz'.format(subject_id),
-                  path.join(out_dir, 'Videos'))
+                  path.join(out_dir, 'Videos')),
+      extract_tgz('archives/BBoxes_MAT_{}.tgz'.format(subject_id),
+                  path.join(out_dir, 'BBoxes_MAT'))
+      extract_tgz('archives/BackSub_MAT_{}.tgz'.format(subject_id),
+                  path.join(out_dir, 'BackSub_MAT')),
+      extract_tgz('archives/PartLabels_MAT_{}.tgz'.format(subject_id),
+                  path.join(out_dir, 'PartLabels_MAT')),
+      extract_tgz('archives/RawDepth_MAT_{}.tgz'.format(subject_id),
+                  path.join(out_dir, 'RawDepth_MAT')),
+      extract_tgz('archives/SCDepth_MAT_{}.tgz'.format(subject_id),
+                  path.join(out_dir, 'SCDepth_MAT')),
+      extract_tgz('archives/BackSub_MPEG4_{}.tgz'.format(subject_id),
+                  path.join(out_dir, 'BackSub_MPEG4'))
 
 
 if __name__ == '__main__':
